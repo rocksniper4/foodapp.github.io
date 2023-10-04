@@ -1,0 +1,124 @@
+body{
+    
+    font-family: cursive;
+}
+
+.bg{
+    /* width: 100%; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(food4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Ensure the background is behind other content */
+}
+
+.text-center{
+    color: rgb(177, 154, 254);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* text-decoration: underline; */
+    font-weight: 800;
+    /* box-shadow: inset 12px 12px 20px #7d7c7c, inset -15px -15px 20px #ffffff; */
+    border-radius: 20px;
+    margin-left: -200px;
+    /* border: 5px solid #95ff00; */
+    width: 90%;
+    height: 60px;
+    padding-top: 6px;
+    background-color: #0000007d;
+}
+
+p{
+    font-size: 40px;
+    animation: typeIn 2s steps(28) forwards;
+}
+
+.text1{
+    width:300px;
+    margin-left: -180px;
+    color: #ffffff;
+}
+
+.text2{
+    margin-left: 50px;
+    color: #95ff00;
+}
+
+.text3{
+    color: #ffffff;
+}
+
+.search-meal{
+    margin-left: -175px;
+}
+
+h2{
+    text-align: center;
+    font-weight: 800;
+    /* box-shadow: inset 12px 12px 20px #7d7c7c, inset -15px -15px 20px #ffffff; */
+    border-radius: 20px;
+    width: 65%;
+}
+
+.one{
+    color: #95ff00;
+    font-style: italic;
+}
+
+.two{
+    color: #95ff00;
+    font-style: italic;
+}
+
+.form-control{
+    height: 55px;
+    width: 350px;
+    box-shadow: inset 12px 12px 20px #7d7c7c, inset -15px -15px 20px #ffffff;
+    line-height: 100px;
+    border-radius: 20px;
+}
+
+.form-control:hover{
+    box-shadow: inset -15px -15px 20px #7d7c7c, inset 15px 15px 20px #ffffff;
+}
+
+#suggestions{
+    height: 100%;
+    color: rgb(25, 126, 249);
+    max-height: 250px;
+    overflow:auto;
+    scroll-behavior: smooth;
+    scroll-margin: 2px;
+}
+
+option{
+    color: #7d7c7c;
+}
+
+.favorites-list{
+    padding: 5px;
+    margin-left: 0;
+    margin-top: 5px;
+    border-radius: 20px;
+    overflow: auto;
+}
+
+li{
+    border-radius: 20px;
+    margin-top: 5px;
+    width: 350px;
+}
+
+.suggestion-item {
+    margin-bottom: 10px; /* Add margin between suggestion items */
+    cursor: pointer;
+}
+
+.favorites-list-container {
+    max-height: 320px;
+    overflow-y: auto;
+}

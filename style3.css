@@ -1,0 +1,44 @@
+body{
+    background-image: url(instruction5.jpg);
+    /* background-repeat: no-repeat; */
+    background-position: cover;
+    backdrop-filter: blur(5px);
+}
+
+
+.text-center{
+    color: bisque;
+    font-size: 60px;
+}
+
+h3{
+    display: inline-block;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.img-fluid{
+    height: 500px;
+    width: 500px;
+    box-shadow: 3px 3px red, -1em 0 .4em olive;
+    margin-left: 40px;
+}
+
+
+.container-box{
+    display: flex;
+    justify-content:space-between;
+}
+
+.main{
+    margin-top: 8px;
+}
+
+p{
+    color: rgb(85, 255, 0);
+    font-size: 20px;
+    font-weight: 600;
+    overflow-y: auto;
+    height: 500px;
+}
