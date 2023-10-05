@@ -1,9 +1,9 @@
-body{
-    
+body {
+
     font-family: cursive;
 }
 
-.bg{
+.bg {
     /* width: 100%; */
     position: absolute;
     top: 0;
@@ -14,10 +14,11 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    z-index: -1; /* Ensure the background is behind other content */
+    z-index: -1;
+    /* Ensure the background is behind other content */
 }
 
-.text-center{
+.text-center {
     color: rgb(177, 154, 254);
     font-family: Georgia, 'Times New Roman', Times, serif;
     /* text-decoration: underline; */
@@ -32,31 +33,31 @@ body{
     background-color: #0000007d;
 }
 
-p{
+p {
     font-size: 40px;
     animation: typeIn 2s steps(28) forwards;
 }
 
-.text1{
-    width:300px;
+.text1 {
+    width: 300px;
     margin-left: -180px;
     color: #ffffff;
 }
 
-.text2{
+.text2 {
     margin-left: 50px;
     color: #95ff00;
 }
 
-.text3{
+.text3 {
     color: #ffffff;
 }
 
-.search-meal{
+.search-meal {
     margin-left: -175px;
 }
 
-h2{
+h2 {
     text-align: center;
     font-weight: 800;
     /* box-shadow: inset 12px 12px 20px #7d7c7c, inset -15px -15px 20px #ffffff; */
@@ -64,17 +65,17 @@ h2{
     width: 65%;
 }
 
-.one{
+.one {
     color: #95ff00;
     font-style: italic;
 }
 
-.two{
+.two {
     color: #95ff00;
     font-style: italic;
 }
 
-.form-control{
+.form-control {
     height: 55px;
     width: 350px;
     box-shadow: inset 12px 12px 20px #7d7c7c, inset -15px -15px 20px #ffffff;
@@ -82,43 +83,307 @@ h2{
     border-radius: 20px;
 }
 
-.form-control:hover{
+.form-control:hover {
     box-shadow: inset -15px -15px 20px #7d7c7c, inset 15px 15px 20px #ffffff;
 }
 
-#suggestions{
+#suggestions {
     height: 100%;
     color: rgb(25, 126, 249);
-    max-height: 250px;
-    overflow:auto;
-    scroll-behavior: smooth;
+    max-height: 220px;
+    overflow: auto;
+    /* scroll-behavior: smooth; */
     scroll-margin: 2px;
 }
 
-option{
+option {
     color: #7d7c7c;
 }
 
-.favorites-list{
+.favorites-list {
     padding: 5px;
     margin-left: 0;
     margin-top: 5px;
     border-radius: 20px;
-    overflow: auto;
+    overflow-y: auto;
 }
 
-li{
+li {
     border-radius: 20px;
     margin-top: 5px;
     width: 350px;
 }
 
 .suggestion-item {
-    margin-bottom: 10px; /* Add margin between suggestion items */
+    margin-bottom: 10px;
+    /* Add margin between suggestion items */
     cursor: pointer;
 }
 
 .favorites-list-container {
-    max-height: 320px;
-    overflow-y: auto;
+    max-height: 300px;
+    overflow: auto;
 }
+
+.list-group-item {}
+
+
+
+
+
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .bg {
+        background-size: cover;
+    }
+    .heading {
+        width: 100%;
+        margin-left: 200px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .text1 {
+        margin-top: 10px;
+        margin-left: 8px;
+        font-size: 20px;
+
+    }
+
+    .text2 {
+        margin-left: 25%;
+        font-size: 30px;
+    }
+
+    .text3 {
+        margin-left: -15px;
+        font-size: 20px;
+    }
+
+    .search-meal {
+        text-align: left;
+        /* Align search to the left on smaller screens */
+    }
+
+    h2 {
+        max-width: 100%;
+        /* Remove the maximum width for h2 on smaller screens */
+        font-size: 20px;
+    }
+
+    .one {
+        margin-left: 50%;
+    }
+
+    .two {
+        margin-left: 30%;
+    }
+
+    .form-control {
+        max-width: 70%;
+        /* Remove the maximum width for the input on smaller screens */
+        margin-left: 50%;
+    }
+
+    option {
+        margin-left: 50%;
+    }
+
+    #suggestions {
+        max-height: 80px;
+    }
+
+    .suggestion-item {
+        margin-left: 60%;
+        font-size: 12px;
+    }
+    
+    .fav {
+        max-width: 80%;
+        max-height: 17px;
+        font-size: 8px;
+    }
+
+    .favorites-list-container {
+        margin-left: 30%;
+        max-height: 130px;
+    }
+
+    .favorites-list {
+        max-height: none;
+    }
+
+    .list-group-item {
+        max-width: 90%;
+        max-height: 30px;
+        font-size: 8px;
+    }
+
+    .remove {
+        font-size: 8px;
+        max-width: 60px;
+        max-height: 20px;
+    }
+
+}
+
+
+/* @media (min-width: 425px) {
+    .heading {
+        margin-left: 60%;
+        width: 60%;
+        margin-top: -5px;
+    }
+
+    h1 {
+        font-size: 10px;
+    }
+
+    .text1 {
+        margin-left: 8px;
+        font-size: 20px;
+    }
+
+    .text2 {
+        margin-left: 25%;
+        font-size: 20px;
+    }
+
+    .text3 {
+        margin-left: 8px;
+        font-size: 20px;
+    }
+
+    .search-meal {
+        text-align: left;
+    }
+
+    h2 {
+        max-width: 100%;
+        font-size: 20px;
+    }
+
+    .one {
+        margin-left: 47%;
+        font-size: 20px;
+    }
+
+    .two {
+        margin-left: 5%;
+    }
+
+    .form-control {
+        max-width: 50%;
+        max-height: 20%;
+        margin-left: 55%;
+    }
+
+    option {
+        margin-left: 58%;
+        font-size: 10px;
+    }
+
+    #suggestions {
+        max-height: 80px;
+    }
+
+    .suggestion-item {
+        margin-left: 60%;
+        font-size: 10px;
+    }
+
+    .fav {
+        max-width: 80%;
+        max-height: 17px;
+        font-size: 8px;
+    }
+
+    .favorites-list-container {
+        max-width: 60%;
+        max-height: 150px;
+        margin-left: 10%;
+    }
+
+    .favorites-list {
+        max-height: 10px;
+    }
+
+    .list-group-item {
+        max-width: 90%;
+        max-height: 30px;
+        font-size: 8px;
+    }
+
+    .remove {
+        font-size: 8px;
+
+    }
+} */
+
+/* Add media query for screens with a maximum width of 320px */
+/* @media (max-width: 320px) {
+    .bg {
+        background-size: contain;
+    }
+
+    .container {
+        padding: 0px;
+    }
+
+    .heading {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .text1,
+    .text2,
+    .text3 {
+        font-size: 14px;
+    }
+
+    .search-meal {
+        text-align: left;
+    }
+
+    h2 {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    .one,
+    .two {
+        font-size: 16px;
+    }
+
+    .form-control {
+        max-width: 100%;
+    }
+
+    option {
+        font-size: 12px;
+    }
+
+    #suggestions {
+        max-height: 60px;
+    }
+
+    .suggestion-item {
+        font-size: 12px;
+    }
+
+    .favorites-list-container {
+        max-width: 100%;
+    }
+
+    li {
+        width: 100%;
+    }
+} */
